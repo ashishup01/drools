@@ -1,0 +1,13 @@
+package mortgages.mortgages;
+
+import java.lang.Number;
+
+rule "patient-health-reco-7"
+	dialect "mvel"
+	when
+		>p : Patient( lifestyleDisease == "Diabetes" && weight > 150 )
+	then
+		>modify( p ) {
+				>setRecommendedPlan( "healthplan.com/diabetes1" )
+		>}
+end
