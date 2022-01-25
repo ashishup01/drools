@@ -5,9 +5,9 @@ import java.lang.Number;
 rule "ashish-rule-copy-test"
 	dialect "mvel"
 	when
-		>p : PatientCopyTest( lifestyleDisease matches "diabetes" )
+		p : PatientCopyTest( lifestyleDisease matches "diabetes" )
 	then
-		>modify( p ) {
+		modify( p ) {
 				>setRecommendedPlan( "http://health-plan/diabetes" )
-		>}
+		}
 end
