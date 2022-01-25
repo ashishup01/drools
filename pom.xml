@@ -2,19 +2,18 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>mortgages</groupId>
-  <artifactId>RulesEnginePOC</artifactId>
+  <groupId>com.myspace</groupId>
+  <artifactId>Rules_engine_poc</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>MortgagesBackup</name>
-  <description>Loan approval process automation using Drools.
-Duplicated from original project to preserve Ashish's work.</description>
+  <name>Rules_engine_poc</name>
+  <description></description>
   <dependencies>
     <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-api</artifactId>
-      <version>7.18.0.Final</version>
-      <scope>provided</scope>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.10</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
@@ -29,22 +28,22 @@ Duplicated from original project to preserve Ashish's work.</description>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.optaplanner</groupId>
-      <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.18.0.Final</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.thoughtworks.xstream</groupId>
-      <artifactId>xstream</artifactId>
-      <version>1.4.10</version>
-      <scope>test</scope>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-persistence-jaxb</artifactId>
+      <version>7.18.0.Final</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>7.18.0.Final</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
