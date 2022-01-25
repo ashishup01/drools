@@ -1,9 +1,0 @@
-package mortgages.mortgages;
-
-import java.lang.Number;
-
-rule "patient-reco-plan-11"
-	dialect "mvel"
-	when
-	then
-end

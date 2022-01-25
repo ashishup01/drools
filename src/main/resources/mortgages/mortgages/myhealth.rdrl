@@ -1,9 +1,0 @@
-package mortgages.mortgages;
-
-import java.lang.Number;
-
-rule "myhealth"
-	dialect "mvel"
-	when
-	then
-end
